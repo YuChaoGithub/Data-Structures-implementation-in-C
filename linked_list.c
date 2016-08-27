@@ -37,7 +37,7 @@ void clear(list_node * head) {
 	while (head) {
 		list_node * temp = head;
 		head = head->next;
-		free(head);
+		free(temp);
 	}
 }
 
